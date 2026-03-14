@@ -1,0 +1,49 @@
+# PDFファイル（inputフォルダ内）
+input/*.pdf
+input/*.PDF
+
+# 変換結果（outputフォルダ全体）
+output/*
+!output/.gitkeep
+
+# ログファイル（logsフォルダ全体）
+logs/*
+!logs/.gitkeep
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Docker
+.dockerignore
+
+# 環境変数ファイル
+.env
+.env.local
+
+# 一時ファイル
+*.tmp
+*.bak
+*.log

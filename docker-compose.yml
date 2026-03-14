@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mineru-converter:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    container_name: pdf_md_converter
+    volumes:
+      - ./input:/app/input:ro          # 読み取り専用
+      - ./output:/app/output
+      - ./logs:/app/logs
+    environment:
+      - MINERU_DEVICE_MODE=cpu
+      - MINERU_LOG_LEVEL=INFO
+    working_dir: /app
